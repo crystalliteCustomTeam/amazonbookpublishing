@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.avatar {
+	width: 120px;
+	height: 170px;
+	box-sizing: border-box;
+	/* border: 5px white solid; */
+	border-radius: 0%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+.gradient-background {
+    /* height: 600px; */
+     background: linear-gradient(62deg, #fff, #f2f2f2, #707070, #1d1d1f);
+       animation: gradient 15s ease infinite; 
+        background-size: 400% 400%;
+    
+  }
+  @-webkit-keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient{
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+       background-position: 0% 50%;
+    }
+  }
+
+  .title {
+    &__inner {
+       margin: 0;
+       font-size: 90px;
+       line-height: 1;
+       color: #1d1d1f;
+       text-align: center;
+    }
+ }
+ 
+ .circles {
+    mix-blend-mode: screen;
+ 
+    &__item {
+       position: absolute;
+       top: 0;
+       left: 0;
+       border-radius: 50%;
+       will-change: transform;
+ 
+       &--1 {
+          width: 480px;
+          height: 480px;
+          margin: -240px 0 0 -240px;
+          background-color: #00c0e4;
+       }
+ 
+       &--2 {
+          width: 320px;
+          height: 320px;
+          margin: -160px 0 0 -160px;
+          background-color: #707070;
+       }
+ 
+       &--3 {
+          width: 160px;
+          height: 160px;
+          margin: -80px 0 0 -80px;
+          background-color: #00c0e4;
+       }
+    }
+ }
+ 
+ .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border-radius: 50%;
+    background-color: #09276c;
+    z-index: 100;
+    will-change: transform;
+    pointer-events: none;
+    user-select: none;
+ }
+ 
