@@ -188,7 +188,7 @@ const Footer = () => {
           <div className='container max-w-7xl mx-auto grid grid-cols-3 grid-rows-1 p-1 xs:grid-cols-1 xs:px-5 xs:text-center xs:items-center'>
             <div className=''>
               <p>
-                © 2023 Education Logo - All Rights Reserved
+                © 2024 Amazon Book Publishing - All Rights Reserved
               </p>
             </div>
             <div className='flex space-x-2 items-center text-[20px] justify-center text-center xs:py-2'>
